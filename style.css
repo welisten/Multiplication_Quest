@@ -1,0 +1,114 @@
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap'); 
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    text-align:justify;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+    position: relative;
+    width: 398px;
+    height: 261px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200%;
+    background: linear-gradient(#00d9ff, #3801ff);
+    animation: animate 4s linear infinite;
+}
+.container::after{
+    content: '';
+    position:absolute;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 213px;
+    background-color:#fff;
+    padding: 20px 0; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.score{
+    width: 100%;
+    text-align: right;
+    padding-right: 20px;
+    color:#000;
+}
+
+input{
+    outline: none;
+    
+}
+
+.input_colorido{
+    display: block;
+    width: 90%;
+    box-sizing: border-box;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px ;
+    border: 2px solid #008cff;
+    box-shadow: 2px 2px 6px rgb(134, 134, 141);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.input_colorido::placeholder{
+    color: #095fa573;
+    font-family: inherit;
+
+}
+
+.btn{
+    background-color: #008cff;
+    color: #f0f0f0;
+    border: none;
+    display: block;
+    width: 30%;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    margin: 10px ;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    /*ilter:brightness(0.9);*/
+    background-color:#095fa5 ;
+}
+
