@@ -11,7 +11,6 @@ let score = JSON.parse(localStorage.getItem("score"))
 if(!score){
     score = 0
 }
-
 updateContainerQuestions();
 
 formEl.addEventListener("submit", (event) => {
